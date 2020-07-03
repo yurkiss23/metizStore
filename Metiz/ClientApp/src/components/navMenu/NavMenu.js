@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import '../NavMenu.css';
 
 export default class NavMenu extends React.PureComponent {
     state = {
@@ -21,7 +22,7 @@ export default class NavMenu extends React.PureComponent {
                                     <NavLink tag={Link} className="p-2 text-dark" to="/">Головна</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink tag={Link} class="p-2 text-dark" to="products">Каталог</NavLink>
+                                    <NavLink tag={Link} className="p-2 text-dark" to="products">Каталог</NavLink>
                                 </NavItem>
                                 {/* <a class="p-2 text-dark" href="#">Features</a> */}
                                 {/* <a class="p-2 text-dark" href="#">Enterprise</a>
@@ -30,7 +31,7 @@ export default class NavMenu extends React.PureComponent {
                             </ul>
                         {/* </nav> */}
                         </Collapse>
-                        <a class="btn btn-outline-primary" href="#">Sign up</a>
+                        <a className="btn btn-outline-primary" href="#">Sign up</a>
                     </Container>
                 </Navbar>
             </header>
