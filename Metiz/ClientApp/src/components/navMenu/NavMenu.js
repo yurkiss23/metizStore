@@ -19,19 +19,28 @@ export default class NavMenu extends React.PureComponent {
                         {/* <nav class="my-2 my-md-0 mr-md-3"> */}
                             <ul className="navbar-nav flex-grow">
                                 <NavItem>
-                                    <NavLink tag={Link} className="p-2 text-dark" to="/">Головна</NavLink>
+                                    <NavLink tag={Link}
+                                        className="p-2 text-dark"
+                                        to="/">Головна</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink tag={Link} className="p-2 text-dark" to="/catalog">Каталог</NavLink>
+                                    <NavLink tag={Link}
+                                        className="p-2 text-dark"
+                                        to="/catalog">Каталог</NavLink>
                                 </NavItem>
                                 {/* <a class="p-2 text-dark" href="#">Features</a> */}
                                 {/* <a class="p-2 text-dark" href="#">Enterprise</a>
                                 <a class="p-2 text-dark" href="#">Support</a>
                                 <a class="p-2 text-dark" href="#">Pricing</a> */}
+                                <NavItem>
+                                    <NavLink tag={Link}
+                                        className='btn btn-outline-primary'
+                                        to='/login'>Увійти</NavLink>
+                                </NavItem>
                             </ul>
                         {/* </nav> */}
                         </Collapse>
-                        <a className="btn btn-outline-primary" href="#">Sign up</a>
+                        {/* <a className="btn btn-outline-primary" href="#">Sign up</a> */}
                     </Container>
                 </Navbar>
             </header>
