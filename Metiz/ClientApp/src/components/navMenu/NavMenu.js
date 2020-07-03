@@ -22,7 +22,7 @@ export default class NavMenu extends React.PureComponent {
                                     <NavLink tag={Link} className="p-2 text-dark" to="/">Головна</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink tag={Link} className="p-2 text-dark" to="products">Каталог</NavLink>
+                                    <NavLink tag={Link} className="p-2 text-dark" to="/catalog">Каталог</NavLink>
                                 </NavItem>
                                 {/* <a class="p-2 text-dark" href="#">Features</a> */}
                                 {/* <a class="p-2 text-dark" href="#">Enterprise</a>

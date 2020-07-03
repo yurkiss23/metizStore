@@ -6,26 +6,28 @@ class Home extends React.PureComponent {
     state = { isOpen: false };
     render() { 
         return ( 
-            <Container>
-                <div className="row justify-content-center">
-                    <div className="col col-md-6 text-center">
-                        <h1>it's Home</h1>
+            <React.Fragment>
+                <Container>
+                    <div className="row justify-content-center">
+                        <div className="col col-md-6 text-center">
+                            <h1>it's Home</h1>
+                        </div>
                     </div>
-                </div>
-                <div className="row justify-content-center">
-                    <div className="col col-md-6 text-center">
-                        <h3>-- slider --</h3>
+                    <div className="row justify-content-center">
+                        <div className="col col-md-6 text-center">
+                            <h3>-- slider --</h3>
+                        </div>
                     </div>
-                </div>
-                <div className="row justify-content-center">
-                    <div className="col col-md-6 text-center">
-                        <h4>news</h4>
+                    <div className="row justify-content-center">
+                        <div className="col col-md-6 text-center">
+                            <h4>news</h4>
+                        </div>
+                        <div className="col col-md-6 text-center">
+                            <h4>recent</h4>
+                        </div>
                     </div>
-                    <div className="col col-md-6 text-center">
-                        <h4>recent</h4>
-                    </div>
-                </div>
-            </Container>
+                </Container>
+            </React.Fragment>
          );
     }
 }
