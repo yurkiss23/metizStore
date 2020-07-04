@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {connect} from 'react-redux';
 import { Container } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 class Signup extends React.PureComponent {
     state = {  }
@@ -80,8 +81,8 @@ class Signup extends React.PureComponent {
                             </div>
                         </div>
                             <div className='form-group row justify-content-center mt-4'>
-                                <button type="submit"
-                                    className="btn btn-primary col-md-4">Підтвердити</button>
+                                <Link to='/cabinet'
+                                    className="btn btn-primary col-md-4">Підтвердити</Link>
                             </div>
                     </form>
                 </Container>

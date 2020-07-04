@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {connect} from 'react-redux';
 import { Container, NavLink } from 'reactstrap';
-import Signup from './Signup';
 import { Link } from 'react-router-dom';
 
 class Login extends React.PureComponent {
@@ -37,13 +36,14 @@ class Login extends React.PureComponent {
                         <div className="lead">
                             <div className="form-group row justify-content-center">
                                 <div className="col-sm-4 pt-3">
-                                    <button type="submit"
-                                    className="btn btn-success btn-lg btn-block">Увійти</button>
+                                    <Link to='/cabinet'
+                                        className="btn btn-success btn-lg btn-block">
+                                        Увійти</Link>
                                 </div>
                             </div>
                             <div className="form-group row justify-content-center">
                                 <div className="col-sm-6 pt-3">
-                                    <Link tag={Link} to='/signup'
+                                    <Link to='/signup'
                                         className="btn btn-outline-secondary btn-sm btn-block">
                                             Зареєструватися</Link>
                                 </div>

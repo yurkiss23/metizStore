@@ -5,6 +5,7 @@ import Home from './components/home/Home';
 import Catalog from './components/catalog/Catalog';
 import Login from './components/auth/Login';
 import Signup from './components/auth/Signup';
+import Cabinet from './components/cabinet/Cabinet'
 import Counter from './components/Counter';
 import FetchData from './components/FetchData';
 
@@ -16,6 +17,7 @@ export default () => (
         <Route exact path='/catalog' component={Catalog}/>
         <Route exact path='/login' component={Login}/>
         <Route exact path='/signup' component={Signup}/>
+        <Route exact path='/cabinet' component={Cabinet}/>
         {/* <Route path='/counter' component={Counter} />
         <Route path='/fetch-data/:startDateIndex?' component={FetchData} /> */}
     </Layout>
