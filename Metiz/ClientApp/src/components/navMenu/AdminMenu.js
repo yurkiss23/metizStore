@@ -8,11 +8,11 @@ export default class AdminMenu extends React.PureComponent {
     render() { 
         return ( 
             <header>
-                <Navbar className="navbar-expand-md navbar-dark navbar-toggleable-md sticky-top bg-dark p-2 shadow">
+                <Navbar className="navbar-expand-md navbar-dark navbar-toggleable-md sticky-top bg-dark p-0 shadow">
                     <NavbarBrand tag={Link}
                         className='col-md-3 col-lg-2 mr-0 px-3'>Metiz</NavbarBrand>
                     {/* <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Company name</a> */}
-                    <Collapse className="d-sm-inline-flex" isOpen={this.state.isOpen} navbar>
+                    <Collapse className="d-md-inline-flex" isOpen={this.state.isOpen} navbar>
                         {/* <button className="navbar-toggler position-absolute d-md-none collapsed"
                             type="button"
                             data-toggle="collapse"
