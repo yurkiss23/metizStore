@@ -15,7 +15,21 @@ export default class NavMenu extends React.PureComponent {
                     <Container>
                         <NavbarBrand tag={Link} to="/">Metiz</NavbarBrand>
                         {/* <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5> */}
-                        <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={this.state.isOpen} navbar>
+                        <Collapse className="d-sm-inline-flex" isOpen={this.state.isOpen} navbar>
+                            <div className="input-group p-1">
+                                <input type="text"
+                                    className="form-control form-control-sm"
+                                    aria-label="пошук"
+                                    aria-describedby="button-search"></input>
+                                <div className="input-group-append">
+                                    <button className="btn btn-outline-secondary btn-sm"
+                                        type="button"
+                                        id="button-search">
+                                        <span className="fa fa-search"
+                                            aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
                         {/* <nav class="my-2 my-md-0 mr-md-3"> */}
                             <ul className="navbar-nav flex-grow">
                                 <NavItem>
@@ -34,8 +48,15 @@ export default class NavMenu extends React.PureComponent {
                                 <a class="p-2 text-dark" href="#">Pricing</a> */}
                                 <NavItem>
                                     <NavLink tag={Link}
-                                        className='btn btn-outline-primary'
+                                        className='btn btn-outline-primary p-2'
                                         to='/login'>Увійти</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink tag={Link} className='btn p-2'
+                                        to='/cart'>
+                                            <span className="fa fa-shopping-basket"
+                                                aria-hidden="true"></span>
+                                    </NavLink>
                                 </NavItem>
                             </ul>
                         {/* </nav> */}

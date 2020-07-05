@@ -21,7 +21,8 @@ class Signup extends React.PureComponent {
                                 <input type="text"
                                     className="form-control"
                                     id='inputName'
-                                    placeholder="ім'я"></input>
+                                    placeholder="ім'я"
+                                    required></input>
                             </div>
                             <div className="form-group col-md-8">
                                 <label for="inputSurName">Прізвище</label>
@@ -36,13 +37,15 @@ class Signup extends React.PureComponent {
                                 <label for="inputEmail">Email</label>
                                 <input type="email"
                                     className="form-control"
-                                    id="inputEmail" placeholder='email'></input>
+                                    id="inputEmail" placeholder='email'
+                                    required autoFocus></input>
                             </div>
                             <div className="form-group col-md-5">
                                 <label for="inputPassword">Пароль</label>
                                 <input type="password"
                                     className="form-control"
-                                    id="inputPassword" placeholder='пароль'></input>
+                                    id="inputPassword" placeholder='пароль'
+                                    required></input>
                             </div>
                         </div>
                         <div className='form-row'>

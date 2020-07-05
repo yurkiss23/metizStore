@@ -20,7 +20,8 @@ class Login extends React.PureComponent {
                                     <input type="text"
                                     className="form-control form-control-lg"
                                     id="inputLogin"
-                                    placeholder="логін або email"></input>
+                                    placeholder="логін або email"
+                                    required autoFocus></input>
                                 </div>
                             </div>
                             <div className="form-group row">
@@ -29,7 +30,8 @@ class Login extends React.PureComponent {
                                     <input type="password"
                                     className="form-control form-control-lg"
                                     id="inputPassword"
-                                    placeholder="пароль"></input>
+                                    placeholder="пароль"
+                                    required></input>
                                 </div>
                             </div>
                         </div>
